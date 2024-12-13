@@ -9,10 +9,10 @@ Il a été conçu par **Ilyès Bouziane**, étudiant en BUT MMI, pour apprendre 
 2. [Comment démarrer le projet ?](#comment-démarrer-le-projet)
    - [Prérequis](#1-prérequis)
    - [Étapes pour cloner et lancer le projet](#2-étapes-pour-cloner-et-lancer-le-projet)
-3. [Liste des routes disponibles](#liste-des-routes-disponibles)
-4. [Exemples de requêtes API (JSON)](#exemples-de-requêtes-api-json)
-5. [Tester le projet](#tester-le-projet)
-
+3. [Liste des routes disponibles](#3-liste-des-routes-disponibles)
+4. [Exemples de requêtes API (JSON)](#4-exemples-de-requêtes-api-json)
+5. [Tester le projet](#5-tester-le-projet)
+6. [Auteur](#6-auteur)
 ---
 
 ## Introduction
@@ -68,7 +68,7 @@ Lancer le serveur Symfony :
 
     L'application sera accessible à http://localhost:8000.
 
-Liste des routes disponibles
+## 3. Liste des routes disponibles
 Routes utilisateur
 
     Page de connexion
@@ -96,7 +96,7 @@ Routes utilisateur
         Méthode : POST
         Description : API pour créer une réservation avec des données en JSON.
 
-Exemples de requêtes API (JSON)
+## 4. Exemples de requêtes API (JSON)
 1. Créer une réservation
 
 URL : /reservation
@@ -143,7 +143,7 @@ Réponse (succès) :
     }
 ]
 
-Tester le projet
+## 5. Tester le projet
 Tester manuellement avec Postman
 
     Installez Postman.
@@ -162,6 +162,6 @@ Récupérer les réservations :
 
 curl http://localhost:8000/user/reservations
 
-Auteur
+## 6. Auteur
 
 Ce projet a été conçu et réalisé par Ilyès Bouziane.
