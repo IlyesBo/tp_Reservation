@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mes réservations{% endblock %}
+
+{% block body %}
+    <h1>Mes réservations</h1>
+
+    {% if reservations is empty %}
+        <p>Aucune réservation trouvée.</p>
+    {% else %}
+        <ul>
+            {% for reservation in reservations %}
+                <li>
+                    {{ reservation.eventName }} - 
+                    {{ reservation.date|date('d/m/Y') }} - 
+                    {{ reservation.timeSlot }}
+                </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    <a href="{{ path('user_profile') }}">Retour au profil</a>
+
+    <br>
+    <a href="{{ path('user_reserve') }}">Faire une nouvelle réservation</a> <!-- Modification ici pour rediriger vers la page de réservation -->
+{% endblock %}

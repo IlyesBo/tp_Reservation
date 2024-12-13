@@ -1,0 +1,18 @@
+{# templates/user/reserve.html.twig #}
+
+{% extends 'base.html.twig' %}
+
+{% block title %}Créer une réservation{% endblock %}
+
+{% block body %}
+    <h1>Créer une réservation</h1>
+
+    {{ form_start(form) }}
+        {{ form_row(form.date) }}
+        {{ form_row(form.timeSlot) }}
+        {{ form_row(form.eventName) }}
+        <button type="submit">Réserver</button>
+    {{ form_end(form) }}
+
+    <a href="{{ path('user_profile') }}">Retour au profil</a>
+{% endblock %}
