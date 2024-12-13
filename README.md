@@ -72,27 +72,27 @@ Lancer le serveur Symfony :
 Routes utilisateur
 
     Page de connexion
-        URL : /login
+        URL : http://localhost:8000/login
         Méthode : GET
         Description : Permet aux utilisateurs de se connecter.
 
     Profil utilisateur
-        URL : /profile
+        URL : http://localhost:8000/profile
         Méthode : GET
         Description : Affiche le profil de l'utilisateur connecté.
 
     Faire une réservation
-        URL : /reserve
+        URL : http://localhost:8000/reserve
         Méthode : GET, POST
         Description : Permet à l'utilisateur de créer une réservation via un formulaire.
 
     Historique des réservations
-        URL : /user/reservations
+        URL : http://localhost:8000/user/reservations
         Méthode : GET
         Description : Liste toutes les réservations effectuées par l'utilisateur connecté.
 
     Créer une réservation via API
-        URL : /reservation
+        URL : http://localhost:8000/reservations
         Méthode : POST
         Description : API pour créer une réservation avec des données en JSON.
 
